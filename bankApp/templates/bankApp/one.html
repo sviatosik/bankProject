@@ -1,0 +1,20 @@
+{% extends 'bankApp/base.html' %}
+
+
+{% block body %}
+{% for person in people %}
+<ul>
+    name : {{person.client_name}}
+    Thir name : {{person.client_thirname}}
+    age : {{person.client_age}}
+    cart-number : {{person.cart_number}}
+    balance : {{person.cart_balance}}
+
+
+</ul>
+
+
+{%endfor%}
+
+
+{% endblock%}
