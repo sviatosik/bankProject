@@ -6,7 +6,7 @@ from django.db.models import Q
 
 
 def show_info(request):
-    peoples = Client.objects.filter(Q(client_age__gt =18) ,Q(cart_balance__gt = 10000))
+    peoples = Client.objects.filter(Q(client_age__gt =18) ,Q(cart_balance__gt = 2000))
     context = {'people': peoples}
     return render(request, 'bankApp/one.html', context=context)
 
